@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484f14bed165c4edbaa6cd225ca24e18, type: 3}
+  m_Name: Game settings
+  m_EditorClassIdentifier: 
+  file_Name: data
+  file_Extension: txt
+  _data:
+    cameraSettings:
+      roundDuration: 15
+      roundRadius: 4
+      height: 4
+      lookAtHeight: 1.5
+      roamingRadius: 0.75
+      roamingDuration: 5
+      fovMin: 35
+      fovMax: 75
+      fovDelay: 4
+      fovDuration: 0.3
+    settings:
+      playersCount: 2
+      buffCountMin: 0
+      buffCountMax: 5
+      allowDuplicateBuffs: 0
+    stats:
+    - id: 0
+      title: "\u0436\u0438\u0437\u043D\u044C"
+      icon: hp
+      value: 100
+    - id: 1
+      title: "\u0431\u0440\u043E\u043D\u044F"
+      icon: armor
+      value: 25
+    - id: 2
+      title: "\u0443\u0440\u043E\u043D"
+      icon: axe
+      value: 25
+    - id: 3
+      title: "\u0432\u0430\u043C\u043F\u0438\u0440\u0438\u0437\u043C"
+      icon: Meat
+      value: 0
+    buffs:
+    - icon: book
+      id: 0
+      title: "\u0412\u0430\u043C\u043F\u0438\u0440"
+      stats:
+      - value: 100
+        statId: 0
+      - value: 25
+        statId: 3
+    - icon: shield
+      id: 1
+      title: "\u0429\u0438\u0442"
+      stats:
+      - value: 25
+        statId: 1
+      - value: -5
+        statId: 2
+    - icon: apple
+      id: 2
+      title: "\u0421\u0443\u043F\u0435\u0440 \u0441\u0438\u043B\u0430"
+      stats:
+      - value: 35
+        statId: 2
+    - icon: hp
+      id: 3
+      title: "\u0422\u0438\u0442\u0430\u043D"
+      stats:
+      - value: 200
+        statId: 0
+      - value: 25
+        statId: 1
+      - value: 50
+        statId: 2
